@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<script type="text/javascript" src="./peer.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<link rel="external" type="type/html" href="./palette.html">
+		<script src="./colorpicker.js"></script>
+		<script src="./client.js"></script>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+	</head>
+	<body>
+		<video id="myvideo" width="1280" height="720" muted></video>
+
+ 		<canvas id="thecanvas" width="640" height="480"></canvas>
+ 		<div id="colors"></div>
+ 		<button type="button" id="paletteBtn" onclick="ColorSelector();"> Color Palette </button>
+ 		<button type="button" id="clearBtn" onclick="clearDrawing();"> Clear </button>
+	</body>
+</html>
